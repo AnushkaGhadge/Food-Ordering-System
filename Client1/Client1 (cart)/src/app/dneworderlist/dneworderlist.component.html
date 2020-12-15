@@ -1,0 +1,33 @@
+
+  <div class="jumbotron table-responsive">
+      <table class="table">
+        <tr>
+          <th scope="col">Order Id</th>
+          <th scope="col">Order Status</th>
+          <th scope="col">Order Date</th>
+          <th scope="col">Order Time</th>
+          <th scope="col">Customer Name </th>
+          <!-- <th scope="col">Customer Address</th>
+          <th scope="col">Customer Name</th>
+           -->
+          <th scope="col">Restaurant Name</th>
+        </tr>
+        <tr >
+          <td>{{order.id}}</td>
+          <td>{{order.oStatus}}</td>
+          <td>{{order.orderDate}}</td>
+          <td>{{order.orderTime}}</td>
+          <td>{{customer.name}}, {{customer.address.street}},<br>{{customer.address.area}},{{customer.phoneNo}}</td>
+
+          
+          <td>{{order.oVendor.vRestaurant}}</td>
+
+<td>
+<button type="button" (click)="orderdelivered(order.id)"  class="btn btn-info">Order Delivered</button>
+</td>
+
+
+
+
+         </tr>
+      </table>

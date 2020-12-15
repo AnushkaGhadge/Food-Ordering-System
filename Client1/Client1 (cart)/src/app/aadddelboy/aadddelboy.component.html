@@ -1,0 +1,114 @@
+<!-- <h1 style="text-align: center">Add Delivery Boy</h1>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input [(ngModel)]="name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input [(ngModel)]="email" type="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Phone No</label>
+      <input [(ngModel)]="phone" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Street</label>
+      <input [(ngModel)]="street" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Area</label>
+      <input [(ngModel)]="area" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">City</label>
+      <input [(ngModel)]="city" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">State</label>
+      <input [(ngModel)]="state" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Pincode</label>
+      <input [(ngModel)]="pincode" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Role</label>
+      <input [(ngModel)]="role" type="text" value="Delivery Boy" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+      <button (click)="onSignup()" class="btn btn-success">Add Delivery Boy</button>
+    </div>
+  </div>
+</div>
+
+ -->
+
+
+
+
+
+
+
+<div class="jumbotron"  >
+  <div class="container">
+    <legend>Add Delivery Boy</legend>
+
+    <form (ngSubmit)="add()" class="form">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" class="form-control" id="name" name="db.name" placeholder="name" [(ngModel)]="db.name">
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="form-control" id="email" name="email" placeholder="email" [(ngModel)]="db.email">
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="password"
+            [(ngModel)]="db.password">
+        </div>
+
+        <div class="form-group">
+          <label for="">Contact No</label>
+          <input type="text" class="form-control" id="phoneNo" name="phoneNo" placeholder="" [(ngModel)]="db.phoneNo">
+        </div>
+      </div>
+
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <label for="">Street</label>
+          <input [(ngModel)]="db.address.street" name="street" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="">Area</label>
+          <input [(ngModel)]="db.address.area" name="area" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="">City</label>
+          <input [(ngModel)]="db.address.city" name="city" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">State</label>
+          <input [(ngModel)]="db.address.state" name="state" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Pincode</label>
+          <input [(ngModel)]="db.address.pinCode" name="pinCode" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Add Delivery Boy</button>
+          <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

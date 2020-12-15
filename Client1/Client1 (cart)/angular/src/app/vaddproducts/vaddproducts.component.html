@@ -1,0 +1,97 @@
+<!-- 
+<form #myForm="ngForm" (ngSubmit)="add(myForm)" role="form">
+
+ 
+
+  {{msg}}
+  <div class="form-group">
+  <label class="sr-only" for="No">No</label>
+    <input   id="no" ngModel name="no" placeholder="Please enter no">
+  </div>
+  <div class="form-group">
+  <label class="sr-only" for="">Name</label>
+
+    <input   id="name"  ngModel name="name" placeholder="Please enter Name">
+  </div>
+  <div class="form-group">
+  <label class="sr-only" for="">Address</label>
+
+    <input   id="address"  ngModel name="address" placeholder="Please enter address">
+  </div>
+
+  
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ -->
+
+<br>
+ 
+ <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+   
+ </div>
+ 
+ <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+ 
+<div class="jumbotron" >
+  <div class="container">
+    
+    <div class="container ">
+
+      <legend>Add New FoodItem </legend>
+      <form (ngSubmit)="addproduct()" class="form">
+     
+        <div class="form-group">
+
+          <label for="name">Name:</label><br>
+          <input type="text" [(ngModel)]="product.pName" class="form-control" placeholder="Enter Product Name" name="product.pName">
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <input type="number" [(ngModel)]="product.pPrice" class="form-control" placeholder="Enter Product Price" name="product.pPrice">
+        </div>
+    
+    
+        
+        <div class="form-group">
+          <label for="category">Catgory</label><br>
+
+        <input type="radio" [(ngModel)]="product.vegnonveg" name="product.vegnonveg" value="VEG" > Veg
+        <input type="radio" [(ngModel)]="product.vegnonveg" name="product.vegnonveg" value="NONVEG"> Non Veg
+    
+        </div>
+    
+        <div class="form-group">
+          <label for="cuisinetype">Cuisine type</label><br>
+
+        <select [(ngModel)]="product.cType" name="cType"  id="cType" >
+          <option value="ITALIAN">ITALIAN</option>
+          <option value="SOUTHINDIAN">SOUTHINDIAN</option>
+          <option value="NORTHINDIAN">NORTHINDIAN</option>
+          <option value="CONTINENTAL">CONTINENTAL</option>
+
+   </select>
+        </div>
+        <label for="image"><b>Add Image</b></label>
+        <input (change)="onSelectFile($event)" style="border: none" type="file" class="form-control">
+        <br>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  
+
+  </div>
+</div>
+
+   
+</div>
+ 
+
+
+
+  
+
+
+

@@ -1,0 +1,70 @@
+  
+  
+   
+
+<div class="jumbotron" style="margin-right: 10px; margin-left:-15px; ">
+  <div class="container">
+      <legend>Edit Vendor</legend>
+
+      <form (ngSubmit)="edit()" class="form">
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" class="form-control"
+           id="name" name="name"  placeholder="name" [(ngModel)]="vendor.name">
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="form-control"
+           id="email" name="email" placeholder="email" [(ngModel)]="vendor.email">
+        </div>
+        <!-- <div class="form-group">
+          <label for="">Password</label>
+          <input type="password"  class="form-control"
+           id="password" name="password" placeholder="" [(ngModel)]="vendor.password">
+        </div> -->
+        <!-- <div class="form-group">
+            <label for="">Restaurant Name</label>
+            <input type="rname"  class="form-control"
+             id="rname" name="rname" placeholder="Restaurant Name" [(ngModel)]="vendor.rname">
+          </div> -->
+        <div class="form-group">
+            <label for="">Contact No</label>
+            <input type="text"  class="form-control"
+             id="phoneNo" name="phoneNo" placeholder="" [(ngModel)]="vendor.phoneNo">
+          </div>
+          <div class="form-group">
+              <label for="">Street</label>
+              <input [(ngModel)]="vendor.address.street" name="street" type="text" class="form-control">
+            </div>
+  
+</div>
+
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+      <div class="form-group">
+        <label for="">Area</label>
+        <input [(ngModel)]="vendor.address.area"  name="area"type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">City</label>
+        <input [(ngModel)]="vendor.address.city"  name="city"type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">State</label>
+        <input [(ngModel)]="vendor.address.state" name="state" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Pincode</label>
+        <input [(ngModel)]="vendor.address.pinCode" name="pinCode"type="text" class="form-control">
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-success">Save Changes</button>
+          <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+      </div>
+  </div>
+</form>
+
+</div>
+</div>

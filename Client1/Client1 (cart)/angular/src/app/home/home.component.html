@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default navbar nav" *ngIf="flag">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hello ,{{email}}</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" [ngSwitch]="role">
+<!-- 
+      <ul class="nav navbar-nav" *ngSwitchCase="VENDOR">
+        <li><a routerLink="/vendor/addproduct">Add Products</a></li>
+        <li><a routerLink="/vendor/vlistallproducts">Show All Products</a></li>
+        <li><a routerLink="/vendor/veditvendor">Edit Profile</a></li>
+        <li><a routerLink="/home/changepassword" routerLinkActive="active">Change Password</a></li>
+      </ul>
+
+
+      <ul class="nav navbar-nav" *ngSwitchCase="CUSTOMER">
+        <li><a routerLink="/customer/cmenulist">MenuList</a></li>
+        <li><a routerLink="/customer/corderhistory">Order History</a></li>
+        <li><a routerLink="/customer/cpaymenthistory">Payment History</a></li>
+        <li><a routerLink="/customer/ccart">Cart</a></li>
+        <li><a routerLink="/home/changepassword" routerLinkActive="active">Change Password</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav" *ngSwitchCase="ADMIN">
+        <li><a routerLink="/vendor/addproduct">Add Products</a></li>
+        <li><a routerLink="/vendor/vlistallproducts">Show All Products</a></li>
+        <li><a routerLink="/vendor/veditvendor">Edit Profile</a></li>
+        <li><a routerLink="/home/changepassword" routerLinkActive="active">Change Password</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav" *ngSwitchCase="DELIVERYBOY">
+        <li><a routerLink="/deliveryboy/deliveryhistory">Delivery History</a></li>
+        <li><a routerLink="/deliveryboy/neworderlist">New Order Details</a></li>
+        <li><a routerLink="/home/changepassword" routerLinkActive="active">Change Password</a></li>
+      </ul> -->
+
+      
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

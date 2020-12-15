@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar nav" style="width:100%;">
+  <div class="container">
+
+
+
+
+    <ul class="nav navbar-nav">
+    
+      <li><a routerLink="/vendor/addproduct">Add Products</a></li>
+      <li><a routerLink="/vendor/showallproducts">Show All Products</a></li>
+      <li><a routerLink="/vendor/veditvendor">Edit Profile</a></li>
+      <li><a routerLink="/vendor/changepassword" routerLinkActive="active">Change Password</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><button (click)="onLogout()" style="margin-top: 10px; margin-right:25px ;"
+          class="btn btn-link">Logout</button></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<router-outlet></router-outlet>

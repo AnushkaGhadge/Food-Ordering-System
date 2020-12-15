@@ -1,0 +1,33 @@
+
+
+
+<div class="jumbotron">
+  <div class="container">
+      <div class="table-responsive">
+          <table class="table">
+            <tr>
+              <th scope="col">Order Id</th>
+              <th scope="col">Order Date</th>
+              <th scope="col">Order Time</th>
+              <th scope="col">Restaurant Name</th>
+              <th scope="col"> OrderAmount</th>
+              
+            </tr>
+            <tr *ngFor="let order of orderhistory">
+              <td>{{order.id}}</td>
+              <td>{{order.orderDate}}</td>
+              <td>{{order.orderTime}}</td>
+              <td>{{order.oVendor.vRestaurant}}</td>
+              <td>{{order.orderTotal}}</td>
+              <button type="button" [routerLink]="['/customer/cfeedback']"   class="btn btn-success">Give Feedback</button>
+              
+            </tr>
+          </table>
+        </div>
+
+
+
+
+      </div>
+</div>
+

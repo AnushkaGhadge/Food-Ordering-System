@@ -1,0 +1,62 @@
+<nav class="navbar navbar-default navbar nav" style="width:100%;">
+  <div class="container">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hello ,{{email}}</a>
+    </div>
+    <ul class="nav navbar-nav">
+
+      <li><a routerLink="/vendor/addproduct">Add Products</a></li>
+      <li><a routerLink="/vendor/showallproducts">Show All Products</a></li>
+      <li><a routerLink="/vendor/veditvendor">Edit Profile</a></li>
+      <li><a routerLink="/home/changepassword" routerLinkActive="active">Change Password</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><button (click)="onLogout()" style="margin-top: 10px; margin-right:25px ;"
+          class="btn btn-link">Logout</button></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table">
+        <tr>
+          <th scope="col">Order Id</th>
+          <th scope="col">Order Status</th>
+          <th scope="col">Order Date</th>
+          <th scope="col">Order Time</th>
+          <th scope="col">Customer Id</th>
+          <th scope="col">Vendor Id</th>
+        </tr>
+        <tr *ngFor="let odr of orders">
+          <td>{{odr.id}}</td>
+          <td>{{odr.oStatus}}</td>
+          <td>{{odr.orderDate}}</td>
+          <td>{{odr.orderTime}}</td>
+          <td>{{odr.oCustomer.cId}}</td>
+          <td>{{odr.oVendor.vId}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>
+<!-- order=
+{
+  id:"" ,
+  orderDate: "",
+  orderTime: "",
+  oStatus: "",
+  oVendor: {
+      vId: "",
+      vRestaurant: ""
+  },
+  oCustomer: {
+      cId: 1,
+  },
+ } -->

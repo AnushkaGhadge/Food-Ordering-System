@@ -1,0 +1,34 @@
+
+<div class="jumbotron">
+    <div class="container">
+      
+
+        <div class=block>
+            <legend style="color: brown; padding: 24px;">Payment Details</legend> 
+
+
+<legend>Customer Name: {{customer.name}}</legend>
+
+  <div class="table-responsive">
+      <table class="table">
+        <tr>
+          <th scope="col">Payment Id</th>
+          <th scope="col">Payment Mode</th>
+         
+          <th scope="col">Order Id</th>
+          <th scope="col">Total</th>
+
+        </tr>
+        <tr >
+          <td>{{pdetails.pId}}</td>
+          <td>{{pdetails.pMode}}</td>
+          
+          <td>{{order.id}}</td>
+         <td>{{order.orderTotal}} </td>
+        </tr>
+      </table>
+    </div>
+
+<button type="button" [routerLink]="['/customer/listallrestaurant']"   class="btn btn-success">Order more</button>
+  </div>
+</div></div>

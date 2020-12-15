@@ -1,0 +1,39 @@
+<!-- <div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <button (click)="listOfOrders()" class="btn btn-success">Show Orders</button>
+    </div>
+
+     <div class="form-group">
+        <label for="">Enter Order Id</label>
+        <input [(ngModel)]="userId" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+          <button (click)="listOfOrders()" class="btn btn-success">Show Order</button>
+      </div> 
+  </div>
+</div> -->
+
+
+<div class="table-responsive">
+  <table class="table">
+    <tr>
+      <th scope="col">Order Id</th>
+      <th scope="col">Order Status</th>
+      <th scope="col">Order Date</th>
+      <th scope="col">Order Time</th>
+      <th scope="col">Customer Id</th>
+      <th scope="col">Vendor Id</th>
+    </tr>
+    <tr *ngFor="let order of orders">
+      <td>{{order.id}}</td>
+      <td>{{order.ostatus}}</td>
+      <td>{{order.orderdate}}</td>
+      <td>{{order.ordertime}}</td>
+      <td>{{order.customerId}}</td>
+      <td>{{order.vendorId}}</td>
+    </tr>
+  </table>
+
+</div>

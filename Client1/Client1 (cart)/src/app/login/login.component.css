@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+html,body{
+  margin: 0;
+  height: 100%;
+}
+
+
+.vertical{
+  display: flex;
+  align-items: center;
+}
+/* }
+.img {
+  Sets background image and makes it fill the screen, no matter the screen size
+  background: url(../../assets/images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  display: block;
+  height: 100%;
+  overflow: auto;
+  background-image: url("img_girl.jpg"); 
+  background-attachment: fixed;
+  /* Center and scale the image nicely 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} */

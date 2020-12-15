@@ -1,0 +1,25 @@
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table">
+        <tr>
+          <th>Order Id</th>
+          <th>Order Status</th>
+          <th>Order Date</th>
+          <th>Order Time</th>
+          <th>Customer Id</th>
+          <th>Restaurant Name</th>
+        </tr>
+        <tr *ngFor="let odr of orders">
+          <td>{{odr.id}}</td>
+          <td>{{odr.oStatus}}</td>
+          <td>{{odr.orderDate}}<td>
+          <td>{{odr.orderTime}}</td>
+          <td>{{odr.oCustomer.cId}}</td>
+          <td>{{odr.oVendor.vRestaurant}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

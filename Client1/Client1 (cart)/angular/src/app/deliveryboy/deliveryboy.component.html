@@ -1,0 +1,27 @@
+
+
+
+
+
+<nav class="navbar navbar-default navbar nav"  style="width:100%;">
+  <div class="container" >
+   
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hello ,{{email}}</a>
+    </div>
+<ul class="nav navbar-nav" >
+
+  <ul class="nav navbar-nav" >
+    <li><a routerLink="/deliveryboy/deliveryhistory">Delivery History</a></li>
+    <li><a routerLink="/deliveryboy/neworderlist">New Order Details</a></li>
+    <li><a routerLink="/home/changepassword" routerLinkActive="active">Change Password</a></li> 
+
+  </ul>
+  
+</ul>
+<ul class="nav navbar-nav navbar-right">
+  <li><button (click)="onLogout()" style="margin-top: 10px; margin-right:25px ;" class="btn btn-link">Logout</button></li>
+</ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

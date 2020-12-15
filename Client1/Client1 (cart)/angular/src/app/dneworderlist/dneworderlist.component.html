@@ -1,0 +1,18 @@
+
+<div class="table-responsive">
+    <table class="table">
+      <tr>
+        <th scope="col">Order Id</th>
+        <th scope="col">Customer Id</th>
+        <th scope="col">Vendor Id</th>
+        <th scope="col">Delivery Status</th>
+      </tr>
+      <tr *ngFor="let order of orders">
+        <td>{{order.id}}</td>
+        <td>{{order.customerId}}</td>
+        <td>{{order.vendorId}}</td>
+        <td><a href="/home/neworderlist" class="btn btn-sm manage">Delivered</a></td>
+      </tr>
+    </table>
+  
+  </div>

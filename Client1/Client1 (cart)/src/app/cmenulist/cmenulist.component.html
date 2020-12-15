@@ -1,0 +1,20 @@
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" *ngFor="let p of allproducts">
+    <div class="jumbotron " style="border-radius:20px ">
+        <div class="container">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <img src="data:image/gif;base64,{{p?.image.image}}" class="img-resposive "
+                    style="width: 150px;height: 150px; border-radius:20px ;" alt="">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <ul>
+                    <li><span> No:</span> {{p.pId}}</li>
+                    <li><span> Name: </span> {{p.pName}}</li>
+                    <li><span> Price:₹</span> {{p.pPrice}} </li>
+                    <li><span> Cuisine :</span> {{p.cType}} </li>
+                    <li><span> Type:</span> {{p.vegnonveg}} </li>
+                    <button type="button" (click)="addtoCart(p.pId)" class="btn btn-success">Add To Cart</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

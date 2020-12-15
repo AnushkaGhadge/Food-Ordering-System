@@ -1,0 +1,149 @@
+<!-- <nav class="navbar sticky-top navbar-inverse" *ngIf="flag">
+  <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Hello ,{{email}}</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" [ngSwitch]="email">
+        <ul class="nav navbar-nav">
+
+          <li><a routerLink="/edit">Edit Profile</a></li>
+          <li><a routerLink="/changePassword">Change Password</a></li>
+
+
+          <ul class="nav navbar-nav" *ngSwitchCase="'Librarian'">
+          <li><a routerLink="/checkBookavailability">Check Book Availability</a></li>
+          <li><a routerLink="/newbook">Add New Book</a></li>
+          <li><a routerLink="/newcopy">Add New Copy</a></li>
+          <li><a routerLink="/returnbook">Return Book</a></li>
+          <li><a routerLink="/issueBook">Issue Book</a></li>
+          <li><a routerLink="/issuedbooks">List of Issued Book</a></li>
+          <li><a routerLink="/addmember">Add New Member</a></li>
+          <li><a routerLink="/payment">Take payment</a></li>
+          <li><a routerLink="/paymenthistoty">Payment History</a></li>
+          <li><a routerLink="/listofuser">List Of All User</a></li>
+       
+     </ul>
+          <ul class="nav navbar-nav" *ngSwitchCase="'Admin'">
+          <li ><a routerLink="/subjectwise">Subjectwise Copies Report</a></li>
+          <li><a routerLink="/bookwise">Bookwise Copies Report</a></li>
+          <li><a routerLink="/feesorfine">Fees/Fine Report</a></li>
+          <li><a routerLink="/help">help</a></li>
+        </ul>
+         
+        <ul class="nav navbar-nav" *ngSwitchCase="email=='User'">
+          <li><a routerLink="/listofissuedBook">Issued Books</a></li>
+          <li><a routerLink="/userpaymenthistoty">Payment History</a></li>
+        
+        </ul>
+
+          <li> <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search Book by Name">
+            </div>
+            <button type="button" (click)="onSearch()" class="btn btn-default">Search</button>
+          </form></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><button (click)="onLogout()" style="margin-top: 10px;" class="btn btn-link">Logout</button></li>
+        </ul>
+      </div>
+  </div>
+</nav> -->
+
+
+
+<!-- 
+<nav class="navbar navbar-inverse" *ngIf="flag">
+  <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Hello ,{{email}}</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a routerLink="/edit">Edit Profile</a></li>
+          <li><a routerLink="/changePassword">Change Password</a></li>
+          <li><a routerLink="/subjectwise">Subjectwise Copies Report</a></li>
+          <li><a routerLink="/bookwise">Bookwise Copies Report</a></li>
+          <li><a routerLink="/feesorfine">Fees/Fine Report</a></li>
+          <li><a routerLink="/help">help</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><button (click)="onLogout()" style="margin-top: 10px;" class="btn btn-link">Logout</button></li>
+        </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav class="navbar sticky-top navbar-inverse" *ngIf="(email=='Librarian')">
+  <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Hello ,{{email}}</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a routerLink="/edit">Edit Profile</a></li>
+          <li><a routerLink="/changePassword">Change Password</a></li>
+          <li><a routerLink="/checkBookavailability">Check Book Availability</a></li>
+          <li><a routerLink="/newbook">Add New Book</a></li>
+          <li><a routerLink="/newcopy">Add New Copy</a></li>
+          <li><a routerLink="/returnbook">Return Book</a></li>
+          <li><a routerLink="/issueBook">Issue Book</a></li>
+          <li><a routerLink="/issuedbooks">List of Issued Book</a></li>
+          <li><a routerLink="/addmember">Add New Member</a></li>
+          <li><a routerLink="/payment">Take payment</a></li>
+          <li><a routerLink="/paymenthistoty">Payment History</a></li>
+          <li><a routerLink="/listofuser">List Of All User</a></li>
+          <li> <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search Book by Name">
+            </div>
+            <button type="button" (click)="onSearch()" class="btn btn-default">Search</button>
+          </form></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><button (click)="onLogout()" style="margin-top: 10px;" class="btn btn-link">Logout</button></li>
+        </ul>
+      </div>
+  </div>
+</nav>
+
+
+<nav class="navbar sticky-top navbar-inverse" *ngIf="(email==='User')">
+  <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Hello ,{{email}}</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a routerLink="/edit">Edit Profile</a></li>
+          <li><a routerLink="/changePassword">Change Password</a></li>
+          <li><a routerLink="/listofissuedBook">Issued Books</a></li>
+          <li><a routerLink="/userpaymenthistoty">Payment History</a></li>
+          <li> <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search BooK by Name">
+            </div>
+            <button type="button" (click)="onSearch()" class="btn btn-default">Search</button>
+          </form></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><button (click)="onLogout()" style="margin-top: 10px;" class="btn btn-link">Logout</button></li>
+        </ul>
+      </div>
+  </div>
+</nav> -->
+
+  <div class="container">
+   <router-outlet></router-outlet>
+
+
+</div> 
+
+
+

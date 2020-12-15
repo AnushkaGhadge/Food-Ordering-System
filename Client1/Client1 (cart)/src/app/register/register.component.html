@@ -1,0 +1,60 @@
+<div class="jumbotron">
+  <div class="container">
+    <legend>Customer Registration</legend>
+
+
+    <form (ngSubmit)="addCustomer()" class="form">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" class="form-control" id="name" name="c.name" placeholder="name" [(ngModel)]="c.name">
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="form-control" id="email" name="email" placeholder="email" [(ngModel)]="c.email">
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="password"
+            [(ngModel)]="c.password">
+        </div>
+
+        <div class="form-group">
+          <label for="">Contact No</label>
+          <input type="text" class="form-control" id="phoneNo" name="phoneNo" placeholder="" [(ngModel)]="c.phoneNo">
+        </div>
+      </div>
+
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <label for="">Street</label>
+          <input [(ngModel)]="c.address.street" name="street" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="">Area</label>
+          <input [(ngModel)]="c.address.area" name="area" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="">City</label>
+          <input [(ngModel)]="c.address.city" name="city" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">State</label>
+          <input [(ngModel)]="c.address.state" name="state" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Pincode</label>
+          <input [(ngModel)]="c.address.pinCode" name="pinCode" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Register</button>
+          <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

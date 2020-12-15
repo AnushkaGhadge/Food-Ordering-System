@@ -1,0 +1,21 @@
+.wid{
+    width:50px;
+}
+.a {
+    float:top;
+    width: 100px;
+    height: 100px;
+    
+  }
+  .btn-group button,input {
+    background-color:white; /* Green background */
+    border: 1px solid black ; /* Green border */
+    color:black; /* White text */
+    border-radius: 5px;
+ /* padding: 10px 24px; */
+  /* Some padding */
+   cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Flt the buttons side by side */
+    height: 30px;
+  }
+  

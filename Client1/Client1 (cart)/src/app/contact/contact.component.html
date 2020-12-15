@@ -1,0 +1,35 @@
+
+<div class="jumbotron">
+  <div class="container">
+    <!-- <h1>Hello, world!</h1>
+    <p>Contents ...</p>
+    <p>
+      <a class="btn btn-primary btn-lg">Learn more</a>
+    </p> -->
+ 
+<h1>Contact Us</h1>
+<form (ngSubmit)="processForm()">
+
+  <!-- name -->
+  <div class="form-group">
+      <label for="">Name</label>
+    <input type="text" name="name" class="input" placeholder="Your Name" class="form-control" [(ngModel)]="name">
+  </div>
+
+  <!-- email -->
+  <div class="form-group">
+      <label for="">Email</label>
+    <input type="email" name="email" class="input" placeholder="Your Email" class="form-control"[(ngModel)]="email">
+  </div>
+
+  <!-- message -->
+  <div class="form-group">
+      <label for="">Message</label>
+    <textarea class="textarea"rows="5" name="message" placeholder="What's on your mind?" class="form-control"[(ngModel)]="message"></textarea>
+  </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+</div>
+</div>

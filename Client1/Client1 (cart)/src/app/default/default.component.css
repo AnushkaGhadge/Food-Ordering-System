@@ -1,0 +1,15 @@
+.block {
+    width: 270px;
+    height: 308px;
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 10%;
+}
+.link{
+    color: darkred;
+    text-align: center;
+    font-weight: bolder;
+}
+

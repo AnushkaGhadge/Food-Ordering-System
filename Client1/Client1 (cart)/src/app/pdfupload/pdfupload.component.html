@@ -1,0 +1,68 @@
+
+
+<div class="jumbotron">
+  <div class="container">
+    <legend>Add New Book</legend>
+
+
+    <form (ngSubmit)="addbook()" class="form">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+          <label for="">Author Name</label>
+          <input type="text" class="form-control" id="authname" name="authname" placeholder="Author Name" [(ngModel)]="authname">
+        </div>
+        <div class="form-group">
+
+        <label for="">Book Name</label>
+          <input type="text" class="form-control" id="bookName" name="bookName" placeholder="bookName" [(ngModel)]="bookName">
+        </div>
+
+        <div class="form-group">
+          <label for="">PDF file</label>
+          <input (change)="onSelectFile($event)" id="pdfbook" name="pdfbook" class="form-control" type="file"
+            class="form-control" [(ngModel)]="pdfbook">
+        </div>
+
+       
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Save Changes</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="jumbotron">
+  <div class="container">
+  
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Book Id</th>
+          <th>Book Name</th>
+          <th>Book Author</th>
+        <th>Open</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let b of booklist;index as i">
+          <!-- <td>{{b.pdfId}}</td> -->
+          <td>{{i+1}} </td>
+        
+          <td>{{b.bookName}}</td>
+          <td>{{b.authName}}</td>
+          <td>
+            <!-- <button type="button" (click)="addtoCart(p.pId)" class="btn btn-success">Add To Cart</button> -->
+
+            <button class="btn-success" type="button" (click)="downpdf(b.pdf,b.bookName)" id="showpdf"  >Download pdf</button> </td> 
+            <td>
+              <button class="btn-success" type="button" (click)="showpdf(b.pdf,b.bookName)" id="showpdf"  >Open pdf</button> </td> 
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    
+  </div>
+</div>

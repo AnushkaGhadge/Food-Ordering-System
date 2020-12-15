@@ -1,0 +1,191 @@
+
+<div class="jumbotron">
+  <div class="container">
+      
+
+<div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngFor="let v of vendorlist">
+          <table class="table table-hover">
+              <tbody>
+                  <tr>
+                      <td >
+                            <img src="data:image/gif;base64,{{v?.image}}" class="img-resposive "
+                            style="width: 150px;height: 150px; border-radius:20px ;" alt="">
+
+                    </td>
+
+                  </tr>
+                  <tr>
+                      <td>
+                          <a class="link" href="/home/login"> {{v.vRestaurant}}</a>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+</div>
+</div>
+</div>
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+
+<!-- <div class="row">
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngFor="let v of vendorlist">
+      <table class="table table-hover">
+        <tbody>
+          <tr>
+            <td><img src="../../assets/images/soup.jpg" alt="soup" class="img" style="border-radius:10px; "></td>
+            
+          </tr>
+          <tr>
+            <td>
+              <a href="/customer/cmenulist/{{v.vId}}"> </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- <div class="jumbotron">
+    <div class="container">
+
+
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
+<!--     
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Product No</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Image</th>
+            <th>Product Type</th>
+            
+            <th>Cuisine Type</th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr *ngFor="let p of product">
+                {{p.pId}}
+                {{p.pName}}
+                {{p.pPrice}}
+                 <img src="data:image/gif;base64,{{p?.image.image}}" class="img-resposive" alt="">
+
+                {{p.vegnonveg}}
+                {{p.cType}}
+                 <a href="/vendor/editproduct/{{p.pId}}"> Edit</a>
+                </tr>
+        </tbody>
+</table>
+ -->
+
+
+
+ 
+ <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" *ngFor="let v of vendorlist">
+  <div class="jumbotron "style="border-radius:20px "  >
+      <div class="container">
+
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="../../assets/images/soup.jpg"  class="img-resposive "
+                  style="width: 150px;height: 150px; border-radius:20px ;" alt="">
+          </div>
+
+          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <ul>
+
+                  <li><span>Restaurant Name</span> {{v.vRestaurant}}</li>
+              
+                 <li><span>Explore Menulist     </span>   <a href="/customer/cmenulist/{{v.vId}}"> {{v.vRestaurant}} </a></li>
+              </ul>
+          </div>
+      </div>
+
+  </div>
+</div> -->
+
+
+<!-- <div class="jumbotron">
+    <div class="container">
+
+
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
+<!--     
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Product No</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Image</th>
+            <th>Product Type</th>
+            
+            <th>Cuisine Type</th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr *ngFor="let p of product">
+                {{p.pId}}
+                {{p.pName}}
+                {{p.pPrice}}
+                 <img src="data:image/gif;base64,{{p?.image.image}}" class="img-resposive" alt="">
+
+                {{p.vegnonveg}}
+                {{p.cType}}
+                 <a href="/vendor/editproduct/{{p.pId}}"> Edit</a>
+                </tr>
+        </tbody>
+</table>
+ -->
+<!-- 
+
+ <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" *ngFor="let v of vendorlist">
+    <div class="jumbotron "style="border-radius:20px "  >
+        <div class="container">
+  
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <img src="data:image/gif;base64,{{v?.image}}" class="img-resposive "
+                    style="width: 150px;height: 150px; border-radius:20px ;" alt="">
+            </div>
+  
+  
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+             
+                <ul>
+  
+                    <li><span>Product No:</span> {{v.vId}}</li>
+                    <li><span>Product Name: </span> {{v.vRestaurant}}</li>
+                   
+                    <li><span>    </span>   <a href="/customer/cmenulist/{{v.vId}}">Explore  {{v.vRestaurant}} </a></li>
+  
+             
+             
+             
+                </ul>
+            </div>
+        </div>
+  
+    </div>
+  </div>
+  
+   -->
+

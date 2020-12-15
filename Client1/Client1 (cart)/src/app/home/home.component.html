@@ -1,0 +1,61 @@
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+
+      <div>
+        <nav class="navbar navbar-inverse" style="border-radius: 0px;">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">FOOD ORDERING SYSTEM</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+    
+              <!-- <ul class="nav navbar-nav" *ngSwitchCase="'ADMIN'">
+                <li><a routerLink="/admin/listUser">List Of Users</a></li>
+                <li><a routerLink="/admin/viewHistory">View History</a></li>
+                <li><a routerLink="/admin/assignDelBoy">Assign Delivery Boy</a></li>
+                <li><a routerLink="/admin/addvendor">Add Vendor </a></li>
+                <li><a routerLink="/admin/addDelBoy">Add Delivery Boy</a></li>
+                <li><a routerLink="/admin/changepassword" routerLinkActive="active">Change Password</a></li>
+    
+              </ul> -->
+              <ul class="nav navbar-nav" >
+                <li><a routerLink="/customer/cmenulist">MenuList</a></li>
+                <li><a routerLink="/customer/corderhistory">Order History</a></li>
+                <li><a routerLink="/customer/cpaymenthistory">Payment History</a></li>
+                <li><a routerLink="/customer/ccart">Cart</a></li>
+                <li><a routerLink="/customer/changepassword" routerLinkActive="active">Change Password</a></li>
+    
+              </ul>
+             
+              <!-- <ul class="nav navbar-nav" *ngSwitchCase="'VENDOR'">
+    
+                <li><a routerLink="/vendor/addproduct">Add Products</a></li>
+                <li><a routerLink="/vendor/showallproducts">Show All Products</a></li>
+                <li><a routerLink="/vendor/veditvendor">Edit Profile</a></li>
+                <li><a routerLink="/vendor/changepassword" routerLinkActive="active">Change Password</a></li>
+              </ul>
+     -->
+    
+              <ul class="nav navbar-nav">
+                <li><a routerLink="/home/about">About Us</a></li>
+                <li><a routerLink="/home/contact">Contact Us</a></li>
+                <li><a routerLink="/home/pdfupload">upload pdf</a></li>
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                      <li><a routerLink="/home/login">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    

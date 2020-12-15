@@ -1,0 +1,10 @@
+.block {
+    width: 1000px;
+    height: 500px;
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 1%;
+    
+}

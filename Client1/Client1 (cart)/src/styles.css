@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/bootstrap.min.css';
+.image{
+    background-image: url('./assets/images/bg-Image1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
